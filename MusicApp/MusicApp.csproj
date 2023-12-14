@@ -1,0 +1,113 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\102827278_p0_master1200.jpg" />
+    <None Remove="Images\1195235.png" />
+    <None Remove="Images\2019090914221232481.jpg" />
+    <None Remove="Images\2020021914495431549.png" />
+    <None Remove="Images\2020120410595792376.png" />
+    <None Remove="Images\2021080915532988856.png" />
+    <None Remove="Images\2022011914065928233.png" />
+    <None Remove="Images\2022011914112126938.png" />
+    <None Remove="Images\2022021419225348187.png" />
+    <None Remove="Images\2022021419240444210.png" />
+    <None Remove="Images\20230208_183556.jpg" />
+    <None Remove="Images\25d9a1dfcba5c58922e3cb7cf398610e_2142895367881498775.jpg" />
+    <None Remove="Images\30964d6f794653f781c30b41f597db34_928591422027975274.png" />
+    <None Remove="Images\340591073_266765019114889_7025555068347963570_n.jpg" />
+    <None Remove="Images\FhbaOcVUYAEsIh6.jpg" />
+    <None Remove="Images\FhNrZaoXEAImWJ0.jpg" />
+    <None Remove="Images\FhsPfUpUAAI4CuR.jpg" />
+    <None Remove="Images\FhSZ0WKVIAIO97T.jpg" />
+    <None Remove="Images\VideoCapture_20230208-181511.jpg" />
+    <None Remove="Images\VideoCapture_20230208-181515.jpg" />
+    <None Remove="Images\VideoCapture_20230208-181532.jpg" />
+    <None Remove="Images\__eden_honkai_and_1_more_drawn_by_ribao__sample-f1f490c62571b630d42fca0336ac49ab.jpg" />
+    <None Remove="Images\__li_sushang_and_li_sushang_honkai_and_1_more__sample-82d3ace115392845897e6e7408d16ab7.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\102827278_p0_master1200.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\1195235.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\2019090914221232481.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\2020021914495431549.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\2020120410595792376.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\2021080915532988856.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\2022011914065928233.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\2022011914112126938.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\2022021419225348187.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\2022021419240444210.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\20230208_183556.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\25d9a1dfcba5c58922e3cb7cf398610e_2142895367881498775.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\30964d6f794653f781c30b41f597db34_928591422027975274.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\340591073_266765019114889_7025555068347963570_n.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\FhbaOcVUYAEsIh6.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\FhNrZaoXEAImWJ0.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\FhsPfUpUAAI4CuR.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\FhSZ0WKVIAIO97T.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\VideoCapture_20230208-181511.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\VideoCapture_20230208-181515.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\VideoCapture_20230208-181532.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\__eden_honkai_and_1_more_drawn_by_ribao__sample-f1f490c62571b630d42fca0336ac49ab.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\__li_sushang_and_li_sushang_honkai_and_1_more__sample-82d3ace115392845897e6e7408d16ab7.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
