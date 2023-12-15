@@ -32,7 +32,7 @@
 
                     <TextBlock Text="LIBRARY" Style="{StaticResource menuTitle}"/>
 
-                    <Button Style="{StaticResource menuButton}" Background="#02be68" Foreground="White">
+                    <Button Style="{StaticResource menuButton}" Background="#6A5495" Foreground="White">
                         <Grid>
                             <TextBlock Text="Home" Margin="0 0 0 2"/>
                             <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}" Visibility="Visible"/>
@@ -78,7 +78,7 @@
                 <Border CornerRadius="20" Margin="0 20 0 0">
                     <Border.Background>
                         <LinearGradientBrush>
-                            <GradientStop Color="#30ad9a" Offset="0"/>
+                            <GradientStop Color="#6A5495" Offset="0"/>
                             <GradientStop Color="#18c274" Offset="1"/>
                         </LinearGradientBrush>
                     </Border.Background>
@@ -135,7 +135,7 @@
             </Border>
             
             <!--Player-->
-            <Border Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="#03bf69" CornerRadius="40 0 40 0" Margin="40 0 0 0">
+            <Border Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="#6A5495" CornerRadius="40 0 40 0" Margin="40 0 0 0">
                 <StackPanel Orientation="Horizontal">
 
                     <Ellipse Width="60" Height="60" Margin="30 0 0 0">

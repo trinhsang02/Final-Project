@@ -6,7 +6,7 @@
     <Application.Resources>
 
         <Style x:Key="menuTitle" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="#97e6c1"/>
+            <Setter Property="Foreground" Value="#8BDB81"/>
             <Setter Property="FontSize" Value="22"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Margin" Value="63 30 0 15"/>
@@ -33,7 +33,7 @@
 
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#02be68"/>
+                    <Setter Property="Background" Value="#6A5495"/>
                     <Setter Property="Foreground" Value="#ffffff"/>
                     <Setter Property="Tag" Value="Visible"/>
                 </Trigger>
@@ -115,7 +115,7 @@
             <Grid HorizontalAlignment="Center" UseLayoutRounding="True" VerticalAlignment="Center">
                 <Ellipse x:Name="grip" Width="30" Height="30" StrokeThickness="10" Fill="#ffffff">
                     <Ellipse.Stroke>
-                        <SolidColorBrush Color="#97e4c1" Opacity="0.5"/>
+                        <SolidColorBrush Color="#8BDB81" Opacity="0.5"/>
                     </Ellipse.Stroke>
                 </Ellipse>
             </Grid>
