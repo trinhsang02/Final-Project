@@ -26,6 +26,7 @@
     <None Remove="Images\FhNrZaoXEAImWJ0.jpg" />
     <None Remove="Images\FhsPfUpUAAI4CuR.jpg" />
     <None Remove="Images\FhSZ0WKVIAIO97T.jpg" />
+    <None Remove="Images\Image1.jpg" />
     <None Remove="Images\VideoCapture_20230208-181511.jpg" />
     <None Remove="Images\VideoCapture_20230208-181515.jpg" />
     <None Remove="Images\VideoCapture_20230208-181532.jpg" />
@@ -91,6 +92,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\FhSZ0WKVIAIO97T.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Image1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\VideoCapture_20230208-181511.jpg">

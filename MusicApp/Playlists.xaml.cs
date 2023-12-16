@@ -1,24 +1,24 @@
 ﻿using MahApps.Metro.IconPacks;
 using System;
-using System.Windows;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Input;
-
+using System.Windows;
 
 namespace MusicApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Playlists.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Playlists : Window
     {
-        public MainWindow()
+        public Playlists()
         {
             InitializeComponent();
         }
-
-        private void Border_MouseDown (object sender, MouseButtonEventArgs e)
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.ChangedButton==MouseButton.Left)
+            if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
             }
@@ -36,18 +36,5 @@ namespace MusicApp
                 // Thêm mã để tạm dừng phát nhạc tại đây
             }
         }
-
-        private void PlaylistButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Tạo một đối tượng của giao diện Playlists
-            Playlists playlistsWindow = new Playlists();
-
-            // Hiển thị giao diện Playlists
-            playlistsWindow.Show();
-
-            // Đóng giao diện MainWindow
-            this.Close();
-        }
-
     }
 }
