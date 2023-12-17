@@ -107,7 +107,7 @@
             <!--Right Section-->
             <Border Grid.Column="2" CornerRadius="0 40 0 0" Background="White" Margin="0 22 0 0">
                 <StackPanel Margin="30 50 30 0">
-                    <TextBlock Text="Popular" Style="{StaticResource titleText}" Margin="0 0 0 10" FontSize="28"/>
+                    <TextBlock Text="Recently" Style="{StaticResource titleText}" Margin="0 0 0 10" FontSize="28"/>
                     
                     <!--Populars-->
                     <uc:PopularSongs Title="My House" Time=":" Image="/Images/1195235.png"/>
