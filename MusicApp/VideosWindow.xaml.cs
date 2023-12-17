@@ -9,16 +9,16 @@ namespace MusicApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class VideosWindow : Window
     {
-        public MainWindow()
+        public VideosWindow()
         {
             InitializeComponent();
         }
 
-        private void Border_MouseDown (object sender, MouseButtonEventArgs e)
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.ChangedButton==MouseButton.Left)
+            if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
             }
@@ -37,6 +37,16 @@ namespace MusicApp
             }
         }
 
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Tạo một thể hiện của MainWindow
+            MainWindow mainWindow = new MainWindow();
+            // Hiển thị MainWindow
+            mainWindow.Show();
+            // Đóng cửa sổ hiện tại
+            this.Close();
+        }
+
         private void SongsButton_Click(object sender, RoutedEventArgs e)
         {
             // Tạo một thể hiện của SongsWindow
@@ -46,17 +56,6 @@ namespace MusicApp
             // Đóng cửa sổ hiện tại
             this.Close();
         }
-
-        private void VideosButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Tạo một thể hiện của VideosWindow
-            VideosWindow videosWindow = new VideosWindow();
-            // Hiển thị VideosWindow
-            videosWindow.Show();
-            // Đóng cửa sổ hiện tại
-            this.Close();
-        }
-
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
             // Tạo một thể hiện của SettingsWindow

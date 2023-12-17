@@ -1,4 +1,4 @@
-﻿<Window x:Class="MusicApp.Playlists"
+﻿<Window x:Class="MusicApp.SongsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
@@ -32,41 +32,33 @@
 
                     <TextBlock Text="LIBRARY" Style="{StaticResource menuTitle}"/>
 
-                    <Button Style="{StaticResource menuButton}">
+                    <Button Style="{StaticResource menuButton}" Click="HomeButton_Click">
                         <Grid>
                             <TextBlock Text="Home" Margin="0 0 0 2"/>
                             <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}"/>
                         </Grid>
                     </Button>
-
+                    
                     <Button Style="{StaticResource menuButton}" Background="#6A5495" Foreground="White">
                         <Grid>
-                            <TextBlock Text="Playlists" Margin="0 0 0 2"/>
+                            <TextBlock Text="Songs" Margin="0 0 0 2"/>
                             <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}" Visibility="Visible"/>
                         </Grid>
                     </Button>
 
-                    <Button Style="{StaticResource menuButton}">
+                    <Button Style="{StaticResource menuButton}" Click="VideosButton_Click">
                         <Grid>
-                            <TextBlock Text="Artists" Margin="0 0 0 2"/>
+                            <TextBlock Text="Videos" Margin="0 0 0 2"/>
                             <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}"/>
                         </Grid>
                     </Button>
 
-                    <Button Style="{StaticResource menuButton}">
+                    <Button Style="{StaticResource menuButton}" Click="SettingsButton_Click">
                         <Grid>
-                            <TextBlock Text="Albums" Margin="0 0 0 2"/>
+                            <TextBlock Text="Settings" Margin="0 0 0 2"/>
                             <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}"/>
                         </Grid>
                     </Button>
-
-                    <Button Style="{StaticResource menuButton}">
-                        <Grid>
-                            <TextBlock Text="Songs" Margin="0 0 0 2"/>
-                            <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}"/>
-                        </Grid>
-                    </Button>
-
 
                 </StackPanel>
             </Border>
@@ -179,3 +171,5 @@
         </Grid>
     </Border>
 </Window>
+
+        

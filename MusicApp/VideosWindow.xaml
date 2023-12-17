@@ -1,4 +1,4 @@
-﻿<Window x:Class="MusicApp.MainWindow"
+﻿<Window x:Class="MusicApp.VideosWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
@@ -6,7 +6,7 @@
         Height="700" Width="1150" ResizeMode="NoResize" AllowsTransparency="True"
         WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent"
         >
-    
+
     <Border Background="White" CornerRadius="40" MouseDown="Border_MouseDown">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -19,7 +19,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            
+
             <!--Menu-->
             <Border Background="White" CornerRadius="40 0 0 40" Grid.RowSpan="2">
                 <StackPanel Margin="0 30 0 0">
@@ -32,10 +32,10 @@
 
                     <TextBlock Text="LIBRARY" Style="{StaticResource menuTitle}"/>
 
-                    <Button Style="{StaticResource menuButton}" Background="#6A5495" Foreground="White">
+                    <Button Style="{StaticResource menuButton}" Click="HomeButton_Click">
                         <Grid>
                             <TextBlock Text="Home" Margin="0 0 0 2"/>
-                            <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}" Visibility="Visible"/>
+                            <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}"/>
                         </Grid>
                     </Button>
 
@@ -46,10 +46,10 @@
                         </Grid>
                     </Button>
 
-                    <Button Style="{StaticResource menuButton}" Click="VideosButton_Click">
+                    <Button Style="{StaticResource menuButton}" Background="#6A5495" Foreground="White">
                         <Grid>
                             <TextBlock Text="Videos" Margin="0 0 0 2"/>
-                            <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}"/>
+                            <Icon:PackIconMaterial Style="{StaticResource menuButtonIcon}" Visibility="Visible"/>
                         </Grid>
                     </Button>
 
@@ -62,7 +62,7 @@
 
                 </StackPanel>
             </Border>
-            
+
             <!--Music Section-->
             <StackPanel Grid.Column="1" Background="White" Margin="40 60 10 0">
                 <TextBlock Text="Home" Style="{StaticResource titleText}"/>
@@ -103,12 +103,12 @@
                     </Grid>
                 </Border>
             </StackPanel>
-            
+
             <!--Right Section-->
             <Border Grid.Column="2" CornerRadius="0 40 0 0" Background="White" Margin="0 22 0 0">
                 <StackPanel Margin="30 50 30 0">
                     <TextBlock Text="Popular" Style="{StaticResource titleText}" Margin="0 0 0 10" FontSize="28"/>
-                    
+
                     <!--Populars-->
                     <uc:PopularSongs Title="My House" Time=":" Image="/Images/1195235.png"/>
                     <uc:PopularSongs Title="Blank Space" Time=":" Image="/Images/1195235.png" IsActive="True"/>
@@ -116,7 +116,7 @@
                     <uc:PopularSongs Title="Red Home" Time=":" Image="/Images/1195235.png"/>
 
                     <TextBlock Text="Playlists" Style="{StaticResource titleText}" Margin="0 30 0 20" FontSize="24"/>
-                    
+
                     <!--Playlists-->
                     <StackPanel Orientation="Horizontal">
                         <uc:Playlists Title="Glory" Desc="Kutless" Image="/Images/1195235.png"/>
@@ -125,7 +125,7 @@
 
                 </StackPanel>
             </Border>
-            
+
             <!--Player-->
             <Border Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="#6A5495" CornerRadius="40 0 40 0" Margin="40 0 0 0">
                 <StackPanel Orientation="Horizontal">
@@ -165,7 +165,7 @@
                     <Button Style="{StaticResource playerButton}">
                         <Icon:PackIconMaterial Kind="RepeatVariant" Style="{StaticResource playerButtonIcon}"/>
                     </Button>
-                    
+
                 </StackPanel>
             </Border>
         </Grid>
