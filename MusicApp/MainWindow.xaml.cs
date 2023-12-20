@@ -1,4 +1,5 @@
 ﻿using MahApps.Metro.IconPacks;
+using MusicApp.UserControls;
 using System;
 using System.Windows;
 using System.Windows.Input;
@@ -6,9 +7,6 @@ using System.Windows.Input;
 
 namespace MusicApp
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -16,14 +14,14 @@ namespace MusicApp
             InitializeComponent();
         }
 
-        private void Border_MouseDown (object sender, MouseButtonEventArgs e)
+        public void Border_MouseDown (object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton==MouseButton.Left)
             {
                 this.DragMove();
             }
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
             if (PlayPauseIcon.Kind == PackIconMaterialKind.Play)
             {
@@ -39,34 +37,18 @@ namespace MusicApp
 
         private void SongsButton_Click(object sender, RoutedEventArgs e)
         {
-            // Tạo một thể hiện của SongsWindow
-            SongsWindow songsWindow = new SongsWindow();
-            // Hiển thị SongsWindow
-            songsWindow.Show();
-            // Đóng cửa sổ hiện tại
-            this.Close();
+            MainContent.Content = new SongsUserControl();
         }
 
         private void VideosButton_Click(object sender, RoutedEventArgs e)
         {
-            // Tạo một thể hiện của VideosWindow
-            VideosWindow videosWindow = new VideosWindow();
-            // Hiển thị VideosWindow
-            videosWindow.Show();
-            // Đóng cửa sổ hiện tại
-            this.Close();
+            MainContent.Content = new VideosUserControl();
         }
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            // Tạo một thể hiện của SettingsWindow
-            SettingsWindow settingsWindow = new SettingsWindow();
-            // Hiển thị SettingsWindow
-            settingsWindow.Show();
-            // Đóng cửa sổ hiện tại
-            this.Close();
+            MainContent.Content = new SettingsUserControl();
         }
-
 
     }
 }
