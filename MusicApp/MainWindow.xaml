@@ -109,7 +109,7 @@
                 <StackPanel Margin="30 50 30 0">
                     <TextBlock Text="Recently" Style="{StaticResource titleText}" Margin="0 0 0 10" FontSize="28"/>
                     
-                    <!--Populars-->
+                    <!--<Populars>-->
                     <uc:PopularSongs Title="My House" Time=":" Image="/Images/1195235.png"/>
                     <uc:PopularSongs Title="Blank Space" Time=":" Image="/Images/1195235.png" IsActive="True"/>
                     <uc:PopularSongs Title="Love Story" Time=":" Image="/Images/1195235.png"/>
